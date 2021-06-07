@@ -12,9 +12,9 @@ public class ConnectionDb {
 		Connection conn = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			String url = "jdbc:mysql://localhost:3316/moviereview?serverTimezone=Asia/Seoul&useSSL=false"; 
-			String userId ="root";
-			String userPw ="6936";
+			String url = "jdbc:mysql://localhost:3306/moviereview?serverTimezone=Asia/Seoul&useSSL=false"; 
+			String userId ="";
+			String userPw ="";
 			conn = DriverManager.getConnection(url,userId,userPw); 
 			System.out.println("Connection ok!!");
 		} catch (ClassNotFoundException | SQLException e1) {
